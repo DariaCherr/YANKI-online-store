@@ -1,0 +1,10 @@
+.sidebar {
+    text-align: left;
+    &__heading {
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+    }
+    &__item {
+        margin-bottom: 20px;
+    }
+}

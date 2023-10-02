@@ -1,0 +1,11 @@
+.button {
+    height: 50px;
+    color: var(--color1);
+    background-color: var(--color3);
+    border: none;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    &:hover {
+        background-color: rgba(204, 168, 138, 1);
+    }
+}
