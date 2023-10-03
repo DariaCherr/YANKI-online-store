@@ -7,15 +7,7 @@
                 display: block;
             }
             &::after {
-                content: "";
-                background-image: url('../icons/arrow-up.svg');
-                background-repeat: no-repeat;
-                position: absolute;
-                display: block;
-                width: 20px;
-                height: 20px;
-                right: -22px;
-                top: 0;
+                transform: rotate(180deg);
             }
         }
         &::after {
@@ -28,6 +20,7 @@
             height: 20px;
             right: -22px;
             top: 0;
+            transition: all 0.5s;
         }
     }
     &__lang-btn {
@@ -61,15 +54,7 @@
                 display: block;
             }
             &::after {
-                content: "";
-                background-image: url('../icons/arrow-up.svg');
-                background-repeat: no-repeat;
-                position: absolute;
-                display: block;
-                width: 20px;
-                height: 20px;
-                right: -22px;
-                top: 0;
+                transform: rotate(180deg);
             }
         }
         &::after {
@@ -82,6 +67,7 @@
             height: 20px;
             right: -22px;
             top: 0;
+            transition: all 0.5s;
         }
     }
     &__currency-btn {

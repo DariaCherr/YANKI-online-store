@@ -33,9 +33,23 @@
                 <div class="header__logo logo">
                     <a href="index.html">YANKI</a>
                 </div>
-                <div class="header__currency">
-                    <div class="header__lang" title="Изменить язык" id="change-lang">RU</div>
-                    <div class="header__currency" title="Изменить валюту" id="change-currency">₽</div>
+                <div class="header__dropdown dropdown">
+                    <div class="dropdown__lang" title="Изменить язык" id="change-lang">
+                        <a href="" class="dropdown__lang-btn">RU</a>
+                        <div class="dropdown__lang-content">
+                            <a href="#" class="dropdown__lang-item">EN</a>
+                            <a href="#" class="dropdown__lang-item">EUR</a>
+                            <a href="#" class="dropdown__lang-item">UAH</a>
+                        </div>
+                    </div>
+                    <div class="dropdown__currency" title="Изменить валюту" id="change-currency">
+                        <a href="" class="dropdown__currency-btn">₽</a>
+                        <div class="dropdown__currency-content">
+                            <a href="#" class="dropdown__currency-item">$</a>
+                            <a href="#" class="dropdown__currency-item">€</a>
+                            <a href="#" class="dropdown__currency-item">₴</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="header__user-nav">
                     <a class="header__user-item">
@@ -97,13 +111,20 @@
                             <div class="catalog-list__shop-item" id="shop-item">
                                 <div class="catalog-list__photo">
                                     <img src="" class="" id="shop-image">
+                                </div>
+                                <div class="catalog-list__heart">
+                                    <img src="/icons/heart-bg.svg" alt="">
                                 </div>                              
                               <div class="catalog-list__content">
                                 <div class="catalog-list__tags" id="shop-tag"></div>
                                 <h2 class="catalog-list__title" id="shop-title"></h2>
                                 <span class="catalog-list__price" id="shop-price"></span>
                                 <span class="catalog-list__size" id="shop-size"></span>
-                                <span class="catalog-list__colors" id="shop-colors"></span>
+                                <span class="catalog-list__colors" id="shop-colors">
+                                    <span class="catalog-list__colors catalog-list__colors--white"></span>
+                                    <span class="catalog-list__colors catalog-list__colors--blue"></span>
+                                    <span class="catalog-list__colors catalog-list__colors--yellow"></span>
+                                </span>
                               </div>
                             </div>
                         </template>
@@ -113,6 +134,39 @@
         </div>
         </div>
     </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__container">
+                <div class="footer__col">
+                    <div class="footer__col-heading">Компания</div>
+                    <a href="" class="footer__col-item">О нас</a>
+                    <a href="" class="footer__col-item">Контакты</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-heading">Полезное</div>
+                    <a href="" class="footer__col-item">Оплата и доставка</a>
+                    <a href="" class="footer__col-item">Условия возврата</a>
+                    <a href="" class="footer__col-item">Бонусная система</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-heading">Покупателю</div>
+                    <a href="" class="footer__col-item">Избранное</a>
+                    <a href="" class="footer__col-item">Публичная оферта</a>
+                    <a href="" class="footer__col-item">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-heading">Контакты</div>
+                    <div class="footer__socials">
+                        <a href="https://www.instagram.com/" class="footer__col-item"><img src="icons/instagram.svg" alt="instagram"></a>
+                        <a href="https://web.telegram.org/z/" class="footer__col-item"><img src="icons/telegram.svg" alt="telegram"></a>
+                    </div>
+                    <a href="tel:+380730963644" class="footer__col-item">+38(073) 096 36 44</a>
+                    <a href="mailto:info@yanki.com" class="footer__col-item">info@yanki.com</a>
+                </div>
+            </div>
+            <div class="footer__rights">©️ 2021 Yanki. All rights reserved</div>
+        </div>
+    </footer>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

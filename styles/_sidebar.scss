@@ -9,8 +9,11 @@
         flex-direction: column;
     }
     &__item {
-        margin-bottom: 20px;
         color: var(--color4);
+        padding: 10px 0;
         cursor: pointer;
+        &:hover {
+            background-color: rgb(253, 251, 245);
+        }
     }
 }

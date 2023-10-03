@@ -1,7 +1,7 @@
 const products = [{
         title: "Синяя парка",
         tags: [""],
-        price: 2900,
+        price: 7500,
         size: ["XXS", "XS", "S", "M", "L"],
         colors: "",
         img: "./img/Products/парка.jpg",
@@ -9,7 +9,7 @@ const products = [{
     {
         title: "Белая куртка",
         tags: ["new"],
-        price: 2900,
+        price: 7500,
         size: ["XXS", "XS", "S", "M", "L"],
         colors: "",
         img: "./img/Products/куртка.jpg",
@@ -17,7 +17,7 @@ const products = [{
     {
         title: "Бежевая шуба",
         tags: [""],
-        price: 4200,
+        price: 10900,
         size: ["XS", "S", 'L'],
         colors: "",
         img: "./img/Products/шуба.jpg",
@@ -25,7 +25,7 @@ const products = [{
     {
         title: "Синее пальто",
         tags: [""],
-        price: 3150,
+        price: 8200,
         size: ["XS", "M", "L"],
         colors: "",
         img: "./img/Products/пальто.jpg",
@@ -33,7 +33,7 @@ const products = [{
     {
         title: "Белая куртка",
         tags: ["new"],
-        price: 2900,
+        price: 7500,
         size: ["XXS", "XS", "S", "M", "L"],
         colors: "",
         img: "./img/Products/куртка.jpg",
@@ -41,7 +41,7 @@ const products = [{
     {
         title: "Синее пальто",
         tags: [""],
-        price: 3150,
+        price: 8200,
         size: ["XS", "M", "L"],
         colors: "",
         img: "./img/Products/пальто.jpg",
@@ -49,7 +49,7 @@ const products = [{
     {
         title: "Бежевая шуба",
         tags: [""],
-        price: 4200,
+        price: 10900,
         size: ["XS", "S", 'L'],
         colors: "",
         img: "./img/Products/шуба.jpg",
@@ -57,7 +57,7 @@ const products = [{
     {
         title: "Синяя парка",
         tags: ["new"],
-        price: 2900,
+        price: 7500,
         size: ["XXS", "XS", "S", "M", "L"],
         colors: "",
         img: "./img/Products/парка.jpg",
@@ -65,7 +65,7 @@ const products = [{
     {
         title: "Белая куртка",
         tags: ["new"],
-        price: 2900,
+        price: 7500,
         size: ["XXS", "XS", "S", "M", "L"],
         colors: "",
         img: "./img/Products/куртка.jpg",
@@ -73,10 +73,26 @@ const products = [{
     {
         title: "Синее пальто",
         tags: [""],
-        price: 3150,
+        price: 8200,
         size: ["XS", "M", "L"],
         colors: "",
         img: "./img/Products/пальто.jpg",
+    },
+    {
+        title: "Белая куртка",
+        tags: ["new"],
+        price: 7500,
+        size: ["XXS", "XS", "S", "M", "L"],
+        colors: "",
+        img: "./img/Products/куртка.jpg",
+    },
+    {
+        title: "Бежевая шуба",
+        tags: [""],
+        price: 10900,
+        size: ["XS", "S", 'L'],
+        colors: "",
+        img: "./img/Products/шуба.jpg",
     }
     // {
     //     title: "",
