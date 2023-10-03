@@ -12,7 +12,7 @@
         position: relative;
         &::after {
             content: '';
-            background-image: url(../icons/arrow-right.svg);
+            background-image: url('../icons/arrow-right.svg');
             background-repeat: no-repeat;
             position: absolute;
             display: block;
@@ -29,6 +29,18 @@
             position: absolute;
             top: -20px;
             left: calc(50% - 50px);
+        }
+        &:hover {
+            &::after {
+                background-image: url('/icons/arrow-right-hover.svg');
+                background-repeat: no-repeat;
+                position: absolute;
+                display: block;
+                width: 20px;
+                height: 20px;
+                right: calc(50% - 105px);
+                top: 0;
+            }
         }
     }
 }

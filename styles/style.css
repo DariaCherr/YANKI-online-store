@@ -14,7 +14,7 @@
 }
 .banner__txt::after {
   content: "";
-  background-image: url(../icons/arrow-right.svg);
+  background-image: url("../icons/arrow-right.svg");
   background-repeat: no-repeat;
   position: absolute;
   display: block;
@@ -31,6 +31,16 @@
   position: absolute;
   top: -20px;
   left: calc(50% - 50px);
+}
+.banner__txt:hover::after {
+  background-image: url("/icons/arrow-right-hover.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  right: calc(50% - 105px);
+  top: 0;
 }
 
 :root {
@@ -305,28 +315,22 @@ html {
 .dropdown__lang:hover .dropdown__lang-content {
   display: block;
 }
-.dropdown__lang:hover::after {
+.dropdown__lang:hover .dropdown__lang-icon {
   transform: rotate(180deg);
 }
-.dropdown__lang::after {
-  content: "";
-  background-image: url("../icons/arrow.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 20px;
-  right: -22px;
-  top: 0;
-  transition: all 0.5s;
+.dropdown__lang-button {
+  display: flex;
 }
-.dropdown__lang-btn:hover {
+.dropdown__lang-button:hover {
   border-bottom: 1px solid var(--color3);
+}
+.dropdown__lang-icon {
+  transition: all 0.5s;
 }
 .dropdown__lang-content {
   display: none;
   position: absolute;
-  min-width: 35px;
+  min-width: 40px;
   z-index: 1;
 }
 .dropdown__lang-item {
@@ -348,26 +352,17 @@ html {
 .dropdown__currency:hover .dropdown__currency-content {
   display: block;
 }
-.dropdown__currency:hover::after {
+.dropdown__currency:hover .dropdown__currency-icon {
   transform: rotate(180deg);
 }
-.dropdown__currency::after {
-  content: "";
-  background-image: url("../icons/arrow.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 20px;
-  right: -22px;
-  top: 0;
-  transition: all 0.5s;
+.dropdown__currency-button {
+  display: flex;
 }
-.dropdown__currency-btn {
-  margin-bottom: 6px;
-}
-.dropdown__currency-btn:hover {
+.dropdown__currency-button:hover {
   border-bottom: 1px solid var(--color3);
+}
+.dropdown__currency-icon {
+  transition: all 0.5s;
 }
 .dropdown__currency-content {
   display: none;
@@ -439,6 +434,10 @@ html {
   text-align: center;
   color: var(--color4);
   font-weight: 200;
+  border: 0.5px solid var(--color4);
+}
+.form__text-entry:focus {
+  outline-color: var(--color3);
 }
 .form__text {
   color: var(--color4);
