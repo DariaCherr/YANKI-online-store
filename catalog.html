@@ -121,14 +121,68 @@
                     <div class="catalog__column catalog-list">
                         <div class="catalog-list__filters">
                             <div class="filters">
-                                <div class="filters-sort">
-                                  <label for="sort">Сортировка:</label>
-                                  <select name="sort" id="sort">
-                                    <option selected value="alphabet">По алфавиту</option>
-                                    <option value="expensive">Сначала дорогие</option>
-                                    <option value="cheap">Сначала дешевые</option>
-                                  </select>
+                                <div class="filters__size filters__inner" id="change-size">
+                                    <div class="filters__size-button filters__button">
+                                        <div class="filters__size-btn">Размер</div>
+                                        <div class="filters__size-icon">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 9.88906L12.8891 6L14 7.11094L9 12.1109L4 7.11094L5.11094 6L9 9.88906Z" fill="#E0BEA2"/>
+                                                </svg>                                                                                   
+                                        </div>
+                                    </div> 
+                                    <div class="filters__size-content filters__content">
+                                        <div class="filters__size-item">XXS</div>
+                                        <div class="filters__size-item">XS</div>
+                                        <div class="filters__size-item">S</div>
+                                        <div class="filters__size-item">M</div>
+                                        <div class="filters__size-item">L</div>
+                                    </div>
                                 </div>
+                                
+                                <div class="filters__price filters__inner" id="change-price">
+                                    <div class="filters__price-button filters__button">
+                                        <div class="filters__price-btn">Цена</div>
+                                        <div class="filters__price-icon">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 9.88906L12.8891 6L14 7.11094L9 12.1109L4 7.11094L5.11094 6L9 9.88906Z" fill="#E0BEA2"/>
+                                                </svg>                                                                                   
+                                        </div>
+                                    </div> 
+                                    <div class="filters__price-content filters__content">
+                                        <div class="filters__price-item">0 ₽ - 2 499 ₽</div>
+                                        <div class="filters__price-item">2 500 ₽ - 4 999 ₽</div>
+                                        <div class="filters__price-item">5 000 ₽ - 7 499 ₽</div>
+                                        <div class="filters__price-item">7 500 ₽ - 9 999 ₽</div>
+                                        <div class="filters__price-item">10 000 ₽ - 12 449 ₽</div>
+                                        <div class="filters__price-item">12 500 ₽ - 14 999 ₽</div>
+                                        <div class="filters__price-item">15 000 ₽ - 17 499 ₽</div>
+                                        <div class="filters__price-item">17 000 ₽ - 19 999 ₽</div>
+                                    </div>
+                                </div>
+
+                                <div class="filters__colors filters__inner" id="change-price">
+                                    <div class="filters__colors-button filters__button">
+                                        <div class="filters__colors-btn">Цвет</div>
+                                        <div class="filters__colors-icon">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 9.88906L12.8891 6L14 7.11094L9 12.1109L4 7.11094L5.11094 6L9 9.88906Z" fill="#E0BEA2"/>
+                                                </svg>                                                                                   
+                                        </div>
+                                    </div> 
+                                    <div class="filters__colors-content filters__content">
+                                        <div class="filters__colors-item">Бежевый</div>
+                                        <div class="filters__colors-item">Белый</div>
+                                        <div class="filters__colors-item">Голубой</div>
+                                        <div class="filters__colors-item">Зеленый</div>
+                                        <div class="filters__colors-item">Коричневый</div>
+                                        <div class="filters__colors-item">Кофейный</div>
+                                        <div class="filters__colors-item">Молочный</div>
+                                        <div class="filters__colors-item">Оранжевый</div>
+                                        <div class="filters__colors-item">Серый</div>
+                                        <div class="filters__colors-item">Фиолетовый</div>
+                                        <div class="filters__colors-item">Черный</div>
+                                    </div>
+                                </div>                        
                               </div>
                         </div>
                         <section class="shop-items"></section>
