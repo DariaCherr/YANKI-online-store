@@ -2,6 +2,7 @@
     display: flex;
     &__arrows {
         position: relative;
+        
         .slick-arrow {
             position: absolute;
             z-index: 1;
@@ -10,6 +11,7 @@
             height: 40px;
             font-size: 0;
             border: none;
+            cursor: pointer;
         }
         .slick-next {
             right: 3%;

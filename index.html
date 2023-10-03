@@ -1,187 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="styles/style.css">
-    <title>YANKI</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="styles/style.css">
+        <title>YANKI</title>
+    </head>
 
-<body>
-    <div class="container-background">
-        <header class="header">
-            <div class="header__inner">
-                <div class="menu-burger">
-                    <a href="">
-                        <img src="icons/menu-burger.svg" alt="">
-                    </a>
+    <body>
+        <div class="container-background">
+            <header class="header">
+                <div class="header__inner">
+                    <div class="menu-burger">
+                        <a href="">
+                            <img src="icons/menu-burger.svg" alt="">
+                        </a>
 
-                </div>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a href="catalog.html">NEW</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="catalog.html">КАТАЛОГ</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#">О НАС</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__logo logo">
-                    <a href="index.html">YANKI</a>
-                </div>
-                <div class="header__currency">
-                    <div class="header__lang" title="Изменить язык" id="change-lang">RU</div>
-                    <div class="header__currency" title="Изменить валюту" id="change-currency">₽</div>
-                </div>
-                <div class="header__user-nav">
-                    <a class="header__user-item">
-                        <img src="icons/search.svg" alt="">
-                    </a>
-                    <a class="header__user-item">
-                        <img src="icons/login.svg" alt="">
-                    </a>
-                    <a class="header__user-item">
-                        <img src="icons/fav.svg" alt="">
-                    </a>
-                    <a class="header__user-item">
-                        <img src="icons/basket.svg" alt="">
-                    </a>
-                </div>
-            </div>
-        </header>
-        <section class="banner">
-            <h1 class="banner__title">Новая коллекция</h1>
-            <a href="" class="banner__txt">Смотреть Новинки</a>
-        </section>
-    </div>
-    <main>
-        <section class="categories">
-            <div class="wrapper">
-                <h2 class="categories__heading">КАТЕГОРИИ</h2>
-                <div class="category-slider__arrows">
-                </div>
-                <div class="category-slider">
-                    <article class="category-slide">
-                        <div class="category-slide__image-box">
-                            <div class="category-slide__image">
-                                <img src="img/куртки.jpg" alt="куртки">
-                            </div>
-                            <div class="category-slide__text">Куртки</div>
-                        </div>
-                    </article>
-                    <article class="category-slide">
-                        <div class="category-slide__image-box">
-                            <div class="category-slide__image">
-                                <img src="img/пальто.jpg" alt="пальто">
-                            </div>
-                            <div class="category-slide__text">Пальто</div>
-                        </div>
-                    </article>
-                    <article class="category-slide">
-                        <div class="category-slide__image-box">
-                            <div class="category-slide__image">
-                                <img src="img/шубы.jpg" alt="шубы">
-                            </div>
-                            <div class="category-slide__text">Шубы</div>
-                        </div>
-                    </article>
-                    <article class="category-slide">
-                        <div class="category-slide__image-box">
-                            <div class="category-slide__image">
-                                <img src="img/парки.jpg" alt="парки">
-                            </div>
-                            <div class="category-slide__text">Парки</div>
-                        </div>
-                    </article>
-                    <article class="category-slide">
-                        <div class="category-slide__image-box">
-                            <div class="category-slide__image">
-                                <img src="img/куртки.jpg" alt="куртки">
-                            </div>
-                            <div class="category-slide__text">Куртки</div>
-                        </div>
-                    </article>
-                    <article class="category-slide">
-                        <div class="category-slide__image-box">
-                            <div class="category-slide__image">
-                                <img src="img/пальто.jpg" alt="пальто">
-                            </div>
-                            <div class="category-slide__text">Пальто</div>
-                        </div>
-                    </article>
-                    <article class="category-slide">
-                        <div class="category-slide__image-box">
-                            <div class="category-slide__image">
-                                <img src="img/шубы.jpg" alt="шубы">
-                            </div>
-                            <div class="category-slide__text">Шубы</div>
-                        </div>
-                    </article>
-                    <article class="category-slide">
-                        <div class="category-slide__image-box">
-                            <div class="category-slide__image">
-                                <img src="img/парки.jpg" alt="парки">
-                            </div>
-                            <div class="category-slide__text">Парки</div>
-                        </div>
-                    </article>
-                </div>
-
-            </div>
-        </section>
-        <section class="subscribe-form">
-            <form class="form">
-                <h2 class="form__heading">Узнайте первым о новинках</h2>
-                <input class="form__text-entry" type="email" name="email" id="UserEmail" placeholder="Ваш email*">
-                <button class="form__button button">Подписаться</button>
-                <span class="form__text">Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями конфиденциальности.
-                </span>
-            </form>
-        </section>
-
-    </main>
-    <footer class="footer">
-        <div class="wrapper">
-            <div class="footer__container">
-                <div class="footer__col">
-                    <div class="footer__col-heading">Компания</div>
-                    <a href="" class="footer__col-item">О нас</a>
-                    <a href="" class="footer__col-item">Контакты</a>
-                </div>
-                <div class="footer__col">
-                    <div class="footer__col-heading">Полезное</div>
-                    <a href="" class="footer__col-item">Оплата и доставка</a>
-                    <a href="" class="footer__col-item">Условия возврата</a>
-                    <a href="" class="footer__col-item">Бонусная система</a>
-                </div>
-                <div class="footer__col">
-                    <div class="footer__col-heading">Покупателю</div>
-                    <a href="" class="footer__col-item">Избранное</a>
-                    <a href="" class="footer__col-item">Публичная оферта</a>
-                    <a href="" class="footer__col-item">Политика конфиденциальности</a>
-                </div>
-                <div class="footer__col">
-                    <div class="footer__col-heading">Контакты</div>
-                    <div class="footer__socials">
-                        <a href="https://www.instagram.com/" class="footer__col-item"><img src="icons/instagram.svg" alt="instagram"></a>
-                        <a href="https://web.telegram.org/z/" class="footer__col-item"><img src="icons/telegram.svg" alt="telegram"></a>
                     </div>
-                    <a href="tel:+380730963644" class="footer__col-item">+38(073) 096 36 44</a>
-                    <a href="mailto:info@yanki.com" class="footer__col-item">info@yanki.com</a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="catalog.html">NEW</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="catalog.html">КАТАЛОГ</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#">О НАС</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__logo logo">
+                        <a href="index.html">YANKI</a>
+                    </div>
+                    <div class="header__dropdown dropdown">
+                        <div class="dropdown__lang" title="Изменить язык" id="change-lang">
+                            <a href="" class="dropdown__lang-btn">RU</a>
+                            <div class="dropdown__lang-content">
+                                <a href="#" class="dropdown__lang-item">EN</a>
+                                <a href="#" class="dropdown__lang-item">EUR</a>
+                                <a href="#" class="dropdown__lang-item">UAH</a>
+                            </div>
+                        </div>
+                        <div class="dropdown__currency" title="Изменить валюту" id="change-currency">
+                            <a href="" class="dropdown__currency-btn">₽</a>
+                            <div class="dropdown__currency-content">
+                                <a href="#" class="dropdown__currency-item">$</a>
+                                <a href="#" class="dropdown__currency-item">€</a>
+                                <a href="#" class="dropdown__currency-item">₴</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__user-nav">
+                        <a class="header__user-item">
+                            <img src="icons/search.svg" alt="">
+                        </a>
+                        <a class="header__user-item">
+                            <img src="icons/login.svg" alt="">
+                        </a>
+                        <a class="header__user-item">
+                            <img src="icons/fav.svg" alt="">
+                        </a>
+                        <a class="header__user-item">
+                            <img src="icons/basket.svg" alt="">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer__rights">©️ 2021 Yanki. All rights reserved</div>
+            </header>
+            <section class="banner">
+                <h1 class="banner__title">Новая коллекция</h1>
+                <a href="catalog.html" class="banner__txt">Смотреть Новинки</a>
+            </section>
         </div>
-    </footer>
-</body>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="scripts/slick.min.js"></script>
-<script src="scripts/slider.js"></script>
+        <main>
+            <section class="categories">
+                <div class="wrapper">
+                    <h2 class="categories__heading">КАТЕГОРИИ</h2>
+                    <div class="category-slider__arrows"></div>
+                    <div class="category-slider">
+                        <article class="category-slide">
+                            <div class="category-slide__image-box">
+                                <div class="category-slide__image">
+                                    <img src="img/куртки.jpg" alt="куртки">
+                                </div>
+                                <div class="category-slide__text">Куртки</div>
+                            </div>
+                        </article>
+                        <article class="category-slide">
+                            <div class="category-slide__image-box">
+                                <div class="category-slide__image">
+                                    <img src="img/пальто.jpg" alt="пальто">
+                                </div>
+                                <div class="category-slide__text">Пальто</div>
+                            </div>
+                        </article>
+                        <article class="category-slide">
+                            <div class="category-slide__image-box">
+                                <div class="category-slide__image">
+                                    <img src="img/шубы.jpg" alt="шубы">
+                                </div>
+                                <div class="category-slide__text">Шубы</div>
+                            </div>
+                        </article>
+                        <article class="category-slide">
+                            <div class="category-slide__image-box">
+                                <div class="category-slide__image">
+                                    <img src="img/парки.jpg" alt="парки">
+                                </div>
+                                <div class="category-slide__text">Парки</div>
+                            </div>
+                        </article>
+                        <article class="category-slide">
+                            <div class="category-slide__image-box">
+                                <div class="category-slide__image">
+                                    <img src="img/куртки.jpg" alt="куртки">
+                                </div>
+                                <div class="category-slide__text">Куртки</div>
+                            </div>
+                        </article>
+                        <article class="category-slide">
+                            <div class="category-slide__image-box">
+                                <div class="category-slide__image">
+                                    <img src="img/пальто.jpg" alt="пальто">
+                                </div>
+                                <div class="category-slide__text">Пальто</div>
+                            </div>
+                        </article>
+                        <article class="category-slide">
+                            <div class="category-slide__image-box">
+                                <div class="category-slide__image">
+                                    <img src="img/шубы.jpg" alt="шубы">
+                                </div>
+                                <div class="category-slide__text">Шубы</div>
+                            </div>
+                        </article>
+                        <article class="category-slide">
+                            <div class="category-slide__image-box">
+                                <div class="category-slide__image">
+                                    <img src="img/парки.jpg" alt="парки">
+                                </div>
+                                <div class="category-slide__text">Парки</div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </section>
+            <section class="subscribe-form">
+                <form class="form">
+                    <h2 class="form__heading">Узнайте первым о новинках</h2>
+                    <input class="form__text-entry" type="email" name="email" id="UserEmail" placeholder="Ваш email*">
+                    <button class="form__button button">Подписаться</button>
+                    <span class="form__text">Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями конфиденциальности.
+                    </span>
+                </form>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__container">
+                    <div class="footer__col">
+                        <div class="footer__col-heading">Компания</div>
+                        <a href="" class="footer__col-item">О нас</a>
+                        <a href="" class="footer__col-item">Контакты</a>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__col-heading">Полезное</div>
+                        <a href="" class="footer__col-item">Оплата и доставка</a>
+                        <a href="" class="footer__col-item">Условия возврата</a>
+                        <a href="" class="footer__col-item">Бонусная система</a>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__col-heading">Покупателю</div>
+                        <a href="" class="footer__col-item">Избранное</a>
+                        <a href="" class="footer__col-item">Публичная оферта</a>
+                        <a href="" class="footer__col-item">Политика конфиденциальности</a>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__col-heading">Контакты</div>
+                        <div class="footer__socials">
+                            <a href="https://www.instagram.com/" class="footer__col-item"><img src="icons/instagram.svg" alt="instagram"></a>
+                            <a href="https://web.telegram.org/z/" class="footer__col-item"><img src="icons/telegram.svg" alt="telegram"></a>
+                        </div>
+                        <a href="tel:+380730963644" class="footer__col-item">+38(073) 096 36 44</a>
+                        <a href="mailto:info@yanki.com" class="footer__col-item">info@yanki.com</a>
+                    </div>
+                </div>
+                <div class="footer__rights">©️ 2021 Yanki. All rights reserved</div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/slider.js"></script>
 
 </html>

@@ -17,36 +17,9 @@
     &__nav-item:not(:last-child) {
         margin-right: 25px;
     }
-    &__currency {
+    &__dropdown {
         display: flex;
         color: var(--color1);
-    }
-    &__lang {
-        margin-right: 43px;
-        position: relative;
-        &::before {
-            content: '';
-            background-image: url(../icons/arrow.svg);
-            background-repeat: no-repeat;
-            position: absolute;
-            display: block;
-            width: 20px;
-            height: 20px;
-            right: -22px;
-        }
-    }
-    &__currency {
-        position: relative;
-        &::before {
-            content: '';
-            background-image: url(../icons/arrow.svg);
-            background-repeat: no-repeat;
-            position: absolute;
-            display: block;
-            width: 20px;
-            height: 20px;
-            right: -22px;
-        }
     }
     &__user-nav {
         display: flex;
@@ -56,3 +29,4 @@
         margin-right: 30px;
     }
 }
+

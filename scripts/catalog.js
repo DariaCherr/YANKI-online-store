@@ -4,7 +4,7 @@ const products = [{
         price: 2900,
         size: ["XXS", "XS", "S", "M", "L"],
         colors: "",
-        img: "",
+        img: "./img/Products/парка.jpg",
     },
     {
         title: "Белая куртка",
@@ -12,31 +12,7 @@ const products = [{
         price: 2900,
         size: ["XXS", "XS", "S", "M", "L"],
         colors: "",
-        img: "./img/Products/product1.jpg",
-    },
-    {
-        title: "Синее пальто",
-        tags: [""],
-        price: 3150,
-        size: ["XS", "M", "L"],
-        colors: "",
-        img: "",
-    },
-    {
-        title: "Белая куртка",
-        tags: ["new"],
-        price: 2900,
-        size: ["XXS", "XS", "S", "M", "L"],
-        colors: "",
-        img: "",
-    },
-    {
-        title: "Синее пальто",
-        tags: [""],
-        price: 3150,
-        size: ["XS", "M", "L"],
-        colors: "",
-        img: "",
+        img: "./img/Products/куртка.jpg",
     },
     {
         title: "Бежевая шуба",
@@ -44,23 +20,7 @@ const products = [{
         price: 4200,
         size: ["XS", "S", 'L'],
         colors: "",
-        img: "",
-    },
-    {
-        title: "Синяя парка",
-        tags: ["new"],
-        price: 2900,
-        size: ["XXS", "XS", "S", "M", "L"],
-        colors: "",
-        img: "",
-    },
-    {
-        title: "Белая куртка",
-        tags: ["new"],
-        price: 2900,
-        size: ["XXS", "XS", "S", "M", "L"],
-        colors: "",
-        img: "",
+        img: "./img/Products/шуба.jpg",
     },
     {
         title: "Синее пальто",
@@ -68,16 +28,64 @@ const products = [{
         price: 3150,
         size: ["XS", "M", "L"],
         colors: "",
-        img: "",
+        img: "./img/Products/пальто.jpg",
     },
     {
-        title: "",
-        tags: [""],
-        price: "",
-        size: ["", "", ],
+        title: "Белая куртка",
+        tags: ["new"],
+        price: 2900,
+        size: ["XXS", "XS", "S", "M", "L"],
         colors: "",
-        img: "",
+        img: "./img/Products/куртка.jpg",
+    },
+    {
+        title: "Синее пальто",
+        tags: [""],
+        price: 3150,
+        size: ["XS", "M", "L"],
+        colors: "",
+        img: "./img/Products/пальто.jpg",
+    },
+    {
+        title: "Бежевая шуба",
+        tags: [""],
+        price: 4200,
+        size: ["XS", "S", 'L'],
+        colors: "",
+        img: "./img/Products/шуба.jpg",
+    },
+    {
+        title: "Синяя парка",
+        tags: ["new"],
+        price: 2900,
+        size: ["XXS", "XS", "S", "M", "L"],
+        colors: "",
+        img: "./img/Products/парка.jpg",
+    },
+    {
+        title: "Белая куртка",
+        tags: ["new"],
+        price: 2900,
+        size: ["XXS", "XS", "S", "M", "L"],
+        colors: "",
+        img: "./img/Products/куртка.jpg",
+    },
+    {
+        title: "Синее пальто",
+        tags: [""],
+        price: 3150,
+        size: ["XS", "M", "L"],
+        colors: "",
+        img: "./img/Products/пальто.jpg",
     }
+    // {
+    //     title: "",
+    //     tags: [""],
+    //     price: "",
+    //     size: ["", "", ],
+    //     colors: "",
+    //     img: "",
+    // }
 ];
 
 let currentState = [...products];
@@ -92,17 +100,19 @@ function renderItems(arr) {
     })
 }
 
-function sortByAlphabet(a, b) {
-    if (a.title > b.title) {
-        return 1;
-    }
-    if (a.title < b.title) {
-        return -1;
-    }
-    return 0;
-}
+// function sortByAlphabet(a, b) {
+//     if (a.title > b.title) {
+//         return 1;
+//     }
+//     if (a.title < b.title) {
+//         return -1;
+//     }
+//     return 0;
+// }
 
-renderItems(currentState.sort((a, b) => sortByAlphabet(a, b)));
+// renderItems(currentState.sort((a, b) => sortByAlphabet(a, b)));
+
+renderItems(products);
 
 function prepareShopItem(shopItem) {
     const { title, size, tags, img, price } = shopItem;
@@ -111,7 +121,7 @@ function prepareShopItem(shopItem) {
     item.querySelector("#shop-title").textContent = title;
     item.querySelector("#shop-size").textContent = size;
     item.querySelector("#shop-image").src = img;
-    item.querySelector("#shop-price").textContent = `от ${price}р.`;
+    item.querySelector("#shop-price").textContent = `${price} р.`;
 
     const tagsHolder = item.querySelector("#shop-tag");
     tags.forEach((tag) => {

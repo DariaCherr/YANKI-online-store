@@ -1,5 +1,5 @@
 .shop-items {
     display: grid;
+    grid-template-columns: repeat(3, 310px);
     gap: 15px;
-    grid-template-columns: repeat(3, 310);
 }
