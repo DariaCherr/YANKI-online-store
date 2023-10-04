@@ -59,6 +59,10 @@
             outline-color: var(--color3);
         }
     }
+    &__hid {
+        display: none;
+        
+    }
     
 }
 
@@ -77,6 +81,14 @@
 @media screen and (max-width: 800px) {
     .header {
         &__hidden {
+            display: none;
+        }
+        &__hid {
+            display: flex;
+            align-items: center;
+        }
+        
+        &__inactive {
             display: none;
         }
     }

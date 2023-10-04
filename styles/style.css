@@ -802,6 +802,9 @@ html {
 .header__user-search:focus {
   outline-color: var(--color3);
 }
+.header__hid {
+  display: none;
+}
 
 @media screen and (max-width: 1200px) {
   .header {
@@ -815,6 +818,13 @@ html {
 }
 @media screen and (max-width: 800px) {
   .header__hidden {
+    display: none;
+  }
+  .header__hid {
+    display: flex;
+    align-items: center;
+  }
+  .header__inactive {
     display: none;
   }
 }
