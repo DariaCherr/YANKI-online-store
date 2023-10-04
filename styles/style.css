@@ -161,7 +161,7 @@ html {
 }
 .catalog-list__heart::after {
   content: "";
-  background-image: url(/icons/heart.svg);
+  background-image: url("../icons/heart.svg");
   background-repeat: no-repeat;
   position: relative;
   width: 15px;
