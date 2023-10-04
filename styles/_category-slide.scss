@@ -4,9 +4,6 @@
     &:not(:last-child) {
         margin-right: 15px;
     }
-    &:hover .category-slide__text {
-        transform: translateY(90%);
-    }
     &__image-box {
         position: relative;
         overflow: hidden;
@@ -15,7 +12,9 @@
         img {
             max-width: 273.75px;
             max-height: 450px;
-            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
             object-position: top;
         }
     }
@@ -23,16 +22,11 @@
         color: var(--color1);
         font-size: 1.25rem;
         position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        top: 0;
         bottom: 0;
-        right: 0;
-        left: 0;
+        min-width: 270px;
         padding: 10px;
         background: rgba(224, 190, 162, 0.75);
-        transform: translateY(100%);
-        transition: all .3s;
+        // transform: translateY(100%);
+        // transition: all .3s;
     }
 }

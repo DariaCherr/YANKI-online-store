@@ -4,15 +4,15 @@ $(function() {
         slidesToShow: 4,
         appendArrows: $('.category-slider__arrows'),
         responsive: [{
-                breakpoint: 768,
+                breakpoint: 1100,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 3
                 }
             },
             {
-                breakpoint: 550,
+                breakpoint: 700,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 2
                 }
             }
         ]
