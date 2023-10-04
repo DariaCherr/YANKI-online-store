@@ -17,6 +17,9 @@
             border-bottom: 1px solid var(--color3);            
         }
     }
+    &__lang-btn {
+        font-size: 1.15rem;
+    }
     &__lang-icon {
         transition: all 0.5s;               
     }
@@ -30,6 +33,7 @@
     &__lang-item {
         display: block;
         border-bottom: none;
+        font-size: 1.15rem;
         &:hover {
             border-bottom: 1px solid var(--color3);
         }
@@ -58,6 +62,9 @@
             
         }
     }
+    &__currency-btn {
+        font-size: 1.15rem;
+    }
     &__currency-icon {
         transition: all 0.5s;               
     }
@@ -70,6 +77,7 @@
     &__currency-item {
         display: block;
         border-bottom: none;
+        font-size: 1.15rem;
         &:hover {
             border-bottom: 1px solid var(--color3);
         }
@@ -89,4 +97,11 @@
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    .dropdown {
+        margin-right: 10px;
+    }
+}
+
 
