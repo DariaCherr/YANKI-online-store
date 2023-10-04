@@ -79,7 +79,7 @@
             display: none;
             width: 420px;
             z-index: 2;
-            bottom: -60px;
+            bottom: -80px;
             background-color: var(--color1);
             border: 1px solid var(--color3);
             border-radius: 5px;
@@ -91,7 +91,7 @@
             position: absolute;
         }
         &__col-item {
-            padding: 5px 0;
+            padding: 10px 0;
         }
         &__icon {
             display: block;
@@ -100,6 +100,7 @@
         }
         &__company-col {
             position: relative;
+            display: block;
             &:hover {
                 .footer__company-content {
                     display: block;
@@ -118,11 +119,12 @@
             }
         }
         &__help-col {
+            display: block;
             position: relative;
             &:hover {
                 .footer__help-content {
                     display: block;
-                    bottom: -86px;
+                    bottom: -118px;
                 }
                 .footer__help-icon {
                     transform: rotate(180deg);
@@ -138,6 +140,7 @@
             }
         }
         &__user-info-col {
+            display: block;
             position: relative;
             &:hover {
                 .footer__user-info-content {

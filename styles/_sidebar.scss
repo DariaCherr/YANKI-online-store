@@ -1,5 +1,7 @@
 .sidebar {
     text-align: left;
+    margin-right: 30px;
+    width: 150px;
     &__heading {
         font-size: 1.25rem;
         margin-bottom: 30px;
@@ -14,6 +16,68 @@
         cursor: pointer;
         &:hover {
             background-color: rgb(253, 251, 245);
+        }
+    }
+    &__button {
+        display: flex;
+    }
+    &__icon {
+        display: none;
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .sidebar {
+        margin-right: 15px;
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .sidebar {
+        position: relative;
+        &:hover {
+            .sidebar__items {
+                display: block;
+            }
+            .sidebar__icon {
+                transform: rotate(180deg);
+            }
+        }
+        &__button {
+            background-color: var(--color3);
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+            width: 350px;
+            margin-bottom: 15px;
+        }
+        &__heading {
+            color: var(--color1);
+            margin: 0;
+
+        }
+        &__icon {
+            display: block;
+            transition: all 0.5s;
+            margin-left: 5px;
+        }
+        &__items {
+            display: none;
+            border: 1px solid var(--color3);
+            width: 350px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        &__item {
+            display: block;
+            margin: 0 !important;
+            &:hover {
+                border-bottom: 1px solid var(--color3);
+                background-color: rgb(253, 251, 245);
+            }
         }
     }
 }

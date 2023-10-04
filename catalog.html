@@ -96,7 +96,14 @@
                 <div class="catalog__columns">
                     <div class="catalog-column--sidebar">
                         <div class="sidebar">
-                            <div class="sidebar__heading">Каталог</div>
+                            <div class="sidebar__button">
+                                <div class="sidebar__heading">Каталог</div>
+                                <div class="sidebar__icon">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 9.88903L12.8891 5.99997L14 7.11091L9 12.1109L4 7.1109L5.11094 5.99997L9 9.88903Z" fill="white"/>
+                                        </svg>
+                                </div>                                                                   
+                            </div>                            
                             <div class="sidebar__items">
                                 <a class="sidebar__item">New</a>
                                 <a class="sidebar__item">Bestsellers</a>
@@ -179,6 +186,8 @@
                                         <div class="filters__colors-item">Молочный</div>
                                         <div class="filters__colors-item">Оранжевый</div>
                                         <div class="filters__colors-item">Серый</div>
+                                        <div class="filters__colors-item">Синий</div>
+                                        <div class="filters__colors-item">Желтый</div>
                                         <div class="filters__colors-item">Фиолетовый</div>
                                         <div class="filters__colors-item">Черный</div>
                                     </div>
@@ -189,11 +198,11 @@
                         <template id="item-template" class="catalog-list__template">
                             <div class="catalog-list__shop-item" id="shop-item">
                                 <div class="catalog-list__photo">
-                                    <img src="" class="" id="shop-image">
-                                </div>
-                                <div class="catalog-list__heart">
-                                    <img src="/icons/heart-bg.svg" alt="">
-                                </div>                              
+                                    <img src="" class="" id="shop-image"  class="catalog-list__image">
+                                    <div class="catalog-list__heart">
+                                        <img src="/icons/heart-bg.svg" alt="">
+                                    </div>   
+                                </div>                                                           
                               <div class="catalog-list__content">
                                 <div class="catalog-list__tags" id="shop-tag"></div>
                                 <h2 class="catalog-list__title" id="shop-title"></h2>

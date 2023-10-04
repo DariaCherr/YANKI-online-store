@@ -223,6 +223,21 @@ html {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1350px) {
+  .catalog__wrapper {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .catalog__columns {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .catalog__wrapper {
+    padding: 0 20px;
+  }
+}
 .categories {
   padding: 89px 0 111px;
 }
@@ -257,6 +272,7 @@ html {
 }
 .category-slide__text {
   color: var(--color1);
+  text-align: center;
   font-size: 1.25rem;
   position: absolute;
   bottom: 0;
@@ -287,7 +303,7 @@ html {
 }
 .category-slider__arrows .slick-next::after {
   content: "";
-  background-image: url(../icons/arrow-next.svg);
+  background-image: url("../icons/arrow-next.svg");
   background-repeat: no-repeat;
   width: 24px;
   height: 30px;
@@ -301,7 +317,7 @@ html {
 }
 .category-slider__arrows .slick-prev::after {
   content: "";
-  background-image: url(../icons/arrow-prev.svg);
+  background-image: url("../icons/arrow-prev.svg");
   width: 24px;
   height: 30px;
   position: absolute;
@@ -310,6 +326,14 @@ html {
   right: 7px;
 }
 
+@media screen and (max-width: 800px) {
+  .category-slider__arrows .slick-next {
+    bottom: -200px;
+  }
+  .category-slider__arrows .slick-prev {
+    bottom: -200px;
+  }
+}
 .container-background {
   background-image: url(../img/banner.jpg);
   background-repeat: no-repeat;
@@ -597,7 +621,7 @@ html {
     display: none;
     width: 420px;
     z-index: 2;
-    bottom: -60px;
+    bottom: -80px;
     background-color: var(--color1);
     border: 1px solid var(--color3);
     border-radius: 5px;
@@ -609,7 +633,7 @@ html {
     position: absolute;
   }
   .footer__col-item {
-    padding: 5px 0;
+    padding: 10px 0;
   }
   .footer__icon {
     display: block;
@@ -618,6 +642,7 @@ html {
   }
   .footer__company-col {
     position: relative;
+    display: block;
   }
   .footer__company-col:hover .footer__company-content {
     display: block;
@@ -634,11 +659,12 @@ html {
     background-color: rgb(253, 251, 245);
   }
   .footer__help-col {
+    display: block;
     position: relative;
   }
   .footer__help-col:hover .footer__help-content {
     display: block;
-    bottom: -86px;
+    bottom: -118px;
   }
   .footer__help-col:hover .footer__help-icon {
     transform: rotate(180deg);
@@ -652,6 +678,7 @@ html {
     background-color: rgb(253, 251, 245);
   }
   .footer__user-info-col {
+    display: block;
     position: relative;
   }
   .footer__user-info-col:hover .footer__user-info-content {
@@ -773,6 +800,11 @@ html {
     padding: 24px 20px;
   }
 }
+@media screen and (max-width: 800px) {
+  .header__hidden {
+    display: none;
+  }
+}
 .logo {
   font-size: 2.8rem;
 }
@@ -784,12 +816,19 @@ html {
 
 .shop-items {
   display: grid;
-  grid-template-columns: repeat(3, 310px);
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
 }
 
+@media screen and (max-width: 580px) {
+  .shop-items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .sidebar {
   text-align: left;
+  margin-right: 30px;
+  width: 150px;
 }
 .sidebar__heading {
   font-size: 1.25rem;
@@ -807,7 +846,64 @@ html {
 .sidebar__item:hover {
   background-color: rgb(253, 251, 245);
 }
+.sidebar__button {
+  display: flex;
+}
+.sidebar__icon {
+  display: none;
+  width: 14px;
+  height: 14px;
+}
 
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    margin-right: 15px;
+    width: 130px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .sidebar {
+    position: relative;
+  }
+  .sidebar:hover .sidebar__items {
+    display: block;
+  }
+  .sidebar:hover .sidebar__icon {
+    transform: rotate(180deg);
+  }
+  .sidebar__button {
+    background-color: var(--color3);
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 350px;
+    margin-bottom: 15px;
+  }
+  .sidebar__heading {
+    color: var(--color1);
+    margin: 0;
+  }
+  .sidebar__icon {
+    display: block;
+    transition: all 0.5s;
+    margin-left: 5px;
+  }
+  .sidebar__items {
+    display: none;
+    border: 1px solid var(--color3);
+    width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .sidebar__item {
+    display: block;
+    margin: 0 !important;
+  }
+  .sidebar__item:hover {
+    border-bottom: 1px solid var(--color3);
+    background-color: rgb(253, 251, 245);
+  }
+}
 .subscribe-form {
   padding: 0 0 100px 0;
 }/*# sourceMappingURL=style.css.map */
