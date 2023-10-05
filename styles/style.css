@@ -621,6 +621,8 @@ html {
   }
   .footer__col {
     margin-right: 0;
+    display: block;
+    width: 100%;
   }
   .footer__contacts-item {
     display: block;
@@ -635,10 +637,11 @@ html {
   }
   .footer__button {
     border-bottom: 1px solid var(--color4);
+    display: flex;
+    justify-content: center;
   }
   .footer__col-heading {
     cursor: pointer;
-    width: 330px;
     margin: 20px 0 5px;
   }
   .footer__contacts-heading {
@@ -646,7 +649,7 @@ html {
   }
   .footer__content {
     display: none;
-    width: 350px;
+    width: 100%;
     z-index: 2;
     bottom: -80px;
     background-color: var(--color1);
@@ -666,6 +669,8 @@ html {
     display: block;
     transition: all 0.5s;
     height: 20px;
+    position: absolute;
+    right: 0;
   }
   .footer__company-col {
     position: relative;
@@ -818,7 +823,7 @@ html {
   position: absolute;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 800px;
   top: -130px;
   padding: 20px 0;
   background-color: transparent;
@@ -930,6 +935,8 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: block;
+    width: 100%;
     color: var(--color4);
   }
   .header__menu-big-item {
@@ -937,7 +944,6 @@ html {
     margin: 0 !important;
     border-bottom: 1px solid var(--color4);
     width: 100%;
-    width: 350px;
     display: block;
   }
   .header__menu-big-item a {

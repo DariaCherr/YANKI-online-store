@@ -52,6 +52,8 @@
         }
         &__col {
             margin-right: 0;
+            display: block;
+            width: 100%;
         }
         &__contacts-item {
             display: block;
@@ -66,10 +68,11 @@
         }
         &__button {
             border-bottom: 1px solid var(--color4);
+            display: flex;
+            justify-content: center;
         }
         &__col-heading {
             cursor: pointer;
-            width: 330px;
             margin: 20px 0 5px;
         }
         &__contacts-heading {
@@ -77,7 +80,7 @@
         }
         &__content {
             display: none;
-            width: 350px;
+            width: 100%;
             z-index: 2;
             bottom: -80px;
             background-color: var(--color1);
@@ -97,6 +100,8 @@
             display: block;
             transition: all 0.5s;
             height: 20px;
+            position: absolute;
+            right: 0;
         }
         &__company-col {
             position: relative;
