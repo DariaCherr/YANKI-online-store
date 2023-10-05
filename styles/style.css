@@ -921,7 +921,7 @@ html {
     flex-direction: column;
     top: -700px;
     background-color: var(--color1);
-    padding: 0;
+    padding: 0 20px;
     left: 0;
     z-index: 1;
   }
@@ -967,8 +967,9 @@ html {
     border-radius: 20px;
     border: 0.5px solid var(--color4);
     padding-left: 20px;
-    transform: translatex(-50px);
-    transition: all;
+    position: absolute;
+    width: 260px;
+    margin: 0 auto;
   }
   .header__menu-search:focus {
     outline-color: var(--color3);
@@ -978,14 +979,9 @@ html {
     justify-content: space-between;
     align-items: center;
   }
-  .header__menu-search {
-    position: absolute;
-    width: 260px;
-    margin: 0 auto;
-  }
   .header__menu-search-icon {
     position: relative;
-    right: -130px;
+    right: -175px;
     bottom: -5px;
   }
   .header.open .header__menu-big {
