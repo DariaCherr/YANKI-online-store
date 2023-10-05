@@ -55,3 +55,14 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .category-slider {
+        &__arrows {
+            .slick-next {
+                right: 30px;
+            }
+        }
+    }
+}
+
