@@ -33,7 +33,7 @@
   left: calc(50% - 50px);
 }
 .banner__txt:hover::after {
-  background-image: url("/icons/arrow-right-hover.svg");
+  background-image: url("../icons/arrow-right-hover.svg");
   background-repeat: no-repeat;
   position: absolute;
   display: block;
@@ -252,6 +252,7 @@ html {
 .category-slide {
   overflow: hidden;
   cursor: pointer;
+  position: relative;
 }
 .category-slide:not(:last-child) {
   margin-right: 15px;
@@ -271,12 +272,18 @@ html {
      object-position: top;
 }
 .category-slide__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--color1);
   text-align: center;
   font-size: 1.25rem;
   position: absolute;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
   min-width: 270px;
+  height: 40px;
+  bottom: 0;
   padding: 10px;
   background: rgba(224, 190, 162, 0.75);
 }
@@ -624,7 +631,7 @@ html {
   }
   .footer__col-heading {
     cursor: pointer;
-    width: 400px;
+    width: 390px;
     margin: 20px 0 5px;
   }
   .footer__contacts-heading {
@@ -632,7 +639,7 @@ html {
   }
   .footer__content {
     display: none;
-    width: 420px;
+    width: 410px;
     z-index: 2;
     bottom: -80px;
     background-color: var(--color1);
