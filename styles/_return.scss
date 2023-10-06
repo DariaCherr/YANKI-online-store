@@ -1,0 +1,135 @@
+.return {
+    text-align: left;
+    &__title {
+        font-weight: 300;
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+    &__text {
+        &:first-of-type {
+            margin-bottom: 10px;
+        }
+        &:last-of-type {
+            margin-bottom: 20px;
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;        
+        width: 100%;
+        padding: 40px 0 270px 0;        
+        
+    }
+    &__item {
+        max-width: 165px;
+        &:not(:last-of-type) {
+            margin-right: 30px;
+        }
+        &:nth-of-type(1) {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                background-image: url(../icons/obmen_i_vosvrat/1.svg);
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;   
+                top: -40px;
+                right: calc(50% - 20px);             
+            }
+        }
+        &:nth-of-type(2) {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                background-image: url(../icons/obmen_i_vosvrat/2.svg);
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;   
+                top: -40px;
+                right: calc(50% - 20px);             
+            }
+        }
+        &:nth-of-type(3) {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                background-image: url(../icons/obmen_i_vosvrat/3.svg);
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;   
+                top: -40px;
+                right: calc(50% - 20px);             
+            }
+        }
+        &:nth-of-type(4) {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                background-image: url(../icons/obmen_i_vosvrat/4.svg);
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;   
+                top: -40px;
+                right: calc(50% - 20px);             
+            }
+        }
+        &:nth-of-type(5) {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                background-image: url(../icons/obmen_i_vosvrat/5.svg);
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;   
+                top: -40px;
+                right: calc(50% - 20px);             
+            }
+        }
+        &:nth-of-type(6) {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                background-image: url(../icons/obmen_i_vosvrat/6.svg);
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;   
+                top: -40px;
+                right: calc(50% - 20px);             
+            }
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .return {
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 60px;
+        }        
+    }
+}
+
+@media(max-width: 600px) {
+    .return {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+            align-items: center;          
+        }        
+    }
+}

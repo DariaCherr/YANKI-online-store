@@ -23,6 +23,9 @@
   &__nav-catalog {
     color: var(--color3) !important;    
   }
+  &__catalog-menu-big-btn {
+    background-color: var(--color3) !important;
+  }
 
   &__inner {
     display: flex;
@@ -100,6 +103,7 @@
     padding: 20px 0;
     background-color: transparent;
     transition: transform 1s;
+    z-index: 3;
   }
 
   &__menu-big-list {
