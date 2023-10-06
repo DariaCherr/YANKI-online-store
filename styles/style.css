@@ -121,7 +121,7 @@ html {
 }
 .breadcrumbs__delimiter::after {
   content: "";
-  background-image: url(/icons/delimiter-arrow.svg);
+  background-image: url(../icons/delimiter-arrow.svg);
   background-repeat: no-repeat;
   display: block;
   position: absolute;
@@ -335,7 +335,7 @@ html {
   right: 7px;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .category-slider__arrows .slick-next {
     bottom: -200px;
   }
@@ -343,9 +343,17 @@ html {
     bottom: -200px;
   }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .category-slider__arrows .slick-next {
     right: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .category-slider__arrows .slick-next {
+    bottom: -150px;
+  }
+  .category-slider__arrows .slick-prev {
+    bottom: -150px;
   }
 }
 .container-background {
