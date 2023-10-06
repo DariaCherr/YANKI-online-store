@@ -104,6 +104,9 @@
 @media screen and (max-width: 800px) {
     .dropdown {
         margin-right: 10px;
+        &__currency-btn {
+            color: var(--color4);
+        }
     }
 }
 

@@ -572,6 +572,9 @@ html {
   .dropdown {
     margin-right: 10px;
   }
+  .dropdown__currency-btn {
+    color: var(--color4);
+  }
 }
 .filters {
   display: flex;
