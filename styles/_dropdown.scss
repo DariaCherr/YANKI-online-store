@@ -47,6 +47,7 @@
     }
     &__currency {
         position: relative;
+        margin-right: 20px;
         &:hover {
             .dropdown__currency-content {
                 display: block;

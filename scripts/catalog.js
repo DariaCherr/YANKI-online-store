@@ -23,12 +23,12 @@ const products = [{
         img: "./img/Products/шуба.jpg",
     },
     {
-        title: "Синее пальто",
+        title: "Кремовое пальто",
         tags: [""],
         price: 8200,
         size: ["XS", "M", "L"],
         colors: "",
-        img: "./img/Products/пальто.jpg",
+        img: "./img/Products/Кремовое_пальто.jpg",
     },
     {
         title: "Белая куртка",
@@ -63,12 +63,12 @@ const products = [{
         img: "./img/Products/парка.jpg",
     },
     {
-        title: "Белая куртка",
-        tags: ["new"],
-        price: 7500,
-        size: ["XXS", "XS", "S", "M", "L"],
+        title: "Кремовое пальто",
+        tags: [""],
+        price: 8200,
+        size: ["XS", "M", "L"],
         colors: "",
-        img: "./img/Products/куртка.jpg",
+        img: "./img/Products/Кремовое_пальто.jpg",
     },
     {
         title: "Синее пальто",
@@ -108,12 +108,17 @@ let currentState = [...products];
 
 const itemsContainer = document.querySelector(".shop-items");
 const itemTemplate = document.querySelector("#item-template");
+const nothingFound = document.querySelector("#nothing-found");
 
 function renderItems(arr) {
+    nothingFound.textContent = "";
     itemsContainer.innerHTML = "";
     arr.forEach((item) => {
         itemsContainer.append(prepareShopItem(item));
     })
+    if (!arr.length) {
+        nothingFound.textContent = "Ничего не найдено";
+    }
 }
 
 // function sortByAlphabet(a, b) {
@@ -148,3 +153,23 @@ function prepareShopItem(shopItem) {
     })
     return item;
 }
+
+const searchInput = document.querySelector(".header__user-search");
+const searchInputMenu = document.querySelector(".header__menu-search");
+
+function applySearch() {
+    const searchString = searchInput.value.trim().toLowerCase();
+    const searchStringMenu = searchInputMenu.value.trim().toLowerCase();
+    currentState = products.filter((el) =>
+        el.title.toLowerCase().includes(searchString)
+    );
+    currentState = products.filter((el) =>
+        el.title.toLowerCase().includes(searchStringMenu)
+    );
+    
+    renderItems(currentState);
+    header.classList.remove("open");
+}
+
+searchInput.addEventListener("search", applySearch);
+searchInputMenu.addEventListener("search", applySearch);

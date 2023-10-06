@@ -13,11 +13,28 @@
         <div class="container-background">
             <header class="header">
                 <div class="header__inner">
+                    <div class="header__container">
                     <button class="header__burger-btn" id="burger">
                         <span class="header__burger-item"></span>
                         <span class="header__burger-item"></span>
-                        <span class="header__burger-item"></span>
+                        <span class="header__burger-item"></span>                        
                     </button>
+                    <div class="dropdown__lang header__hid" title="Изменить язык" id="change-lang">
+                        <div class="dropdown__lang-button" id="drop-lang">
+                            <a class="dropdown__lang-btn">RU</a>
+                            <div class="dropdown__lang-icon">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 9.88903L12.8891 5.99997L14 7.11091L9 12.1109L4 7.1109L5.11094 5.99997L9 9.88903Z" fill="white"/>
+                                    </svg>                                   
+                            </div>
+                        </div>                            
+                        <div class="dropdown__lang-content" id="lang-content">
+                            <a href="#" class="dropdown__lang-item">EN</a>
+                            <a href="#" class="dropdown__lang-item">EUR</a>
+                            <a href="#" class="dropdown__lang-item">UAH</a>
+                        </div>
+                    </div>
+                    </div>
                     <div class="header__menu-big">
                         <button class="header__menu-big-button" id="burger-close">
                             <span class="header__menu-big-btn"></span>
@@ -74,10 +91,10 @@
                                 <a href="">О НАС</a>
                             </li>                                                          
                             <li class="header__menu-big-item">
-                                <a href="info/oplata_i_dostavka.html">ОПЛАТА И ДОСТАВКА</a>
+                                <a href="oplata_i_dostavka.html">ОПЛАТА И ДОСТАВКА</a>
                             </li>
                             <li class="header__menu-big-item">
-                                <a href="info/obmen_i_vosvrat.html">УСЛОВИЯ ВОЗВРАТА</a>
+                                <a href="obmen_i_vosvrat.html">УСЛОВИЯ ВОЗВРАТА</a>
                             </li>
                             <li class="header__menu-big-item">
                                 <a href="#">КОНТАКТЫ</a>
@@ -104,24 +121,9 @@
                             <li class="header__nav-item">
                                 <a href="#">О НАС</a>
                             </li>
-                        </ul>
-                        
+                        </ul>                        
                     </nav>
-                    <div class="dropdown__lang header__hid" title="Изменить язык" id="change-lang">
-                        <div class="dropdown__lang-button" id="drop-lang">
-                            <a class="dropdown__lang-btn">RU</a>
-                            <div class="dropdown__lang-icon">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9 9.88903L12.8891 5.99997L14 7.11091L9 12.1109L4 7.1109L5.11094 5.99997L9 9.88903Z" fill="white"/>
-                                    </svg>                                   
-                            </div>
-                        </div>                            
-                        <div class="dropdown__lang-content" id="lang-content">
-                            <a href="#" class="dropdown__lang-item">EN</a>
-                            <a href="#" class="dropdown__lang-item">EUR</a>
-                            <a href="#" class="dropdown__lang-item">UAH</a>
-                        </div>
-                    </div>
+                    
                     <div class="header__logo logo">
                         <a href="index.html">YANKI</a>
                     </div>
@@ -309,8 +311,8 @@
                             </div>
                         </div>
                         <div class="footer__content footer__help-content">
-                            <a href="info/oplata_i_dostavka.html" class="footer__col-item footer__user-info-item">Оплата и доставка</a>
-                            <a href="info/obmen_i_vosvrat.html" class="footer__col-item footer__user-info-item">Условия возврата</a>
+                            <a href="oplata_i_dostavka.html" class="footer__col-item footer__user-info-item">Оплата и доставка</a>
+                            <a href="obmen_i_vosvrat.html" class="footer__col-item footer__user-info-item">Условия возврата</a>
                             <a href="" class="footer__col-item footer__user-info-item">Бонусная система</a>
                         </div>                        
                     </div>

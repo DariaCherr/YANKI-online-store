@@ -11,10 +11,10 @@
     &__image {
         img {
             max-width: 273.75px;
-            max-height: 450px;
+            max-height: 440px;
             height: 100%;
             width: 100%;
-            object-fit: contain;
+            object-fit: cover;
             object-position: top;
         }
     }
