@@ -18,6 +18,7 @@
 
   &__catalog-currency-btn {
     color: var(--color4) !important;
+    padding-left: 10px;
   }
 
   &__nav-catalog {
@@ -158,7 +159,6 @@
 
       &:hover {
         cursor: pointer;
-
         .header__user-search {
           display: block;
         }
@@ -212,6 +212,13 @@
 
 @media (max-width: 800px) {
   .header {
+    &__logo {
+      display: block;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
     &__hidden {
       display: none;
     }
