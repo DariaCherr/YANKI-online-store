@@ -194,17 +194,17 @@
 
 .header.open {
   .header__menu-big {
-    transform: translateY(170px);
+    transform: translateY(200px);
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   .header {
     padding: 24px 50px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .header {
     padding: 18px 20px;
   }

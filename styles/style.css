@@ -88,17 +88,12 @@ html {
   padding: 0 150px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
   .wrapper {
     padding: 0 50px;
   }
 }
-@media (max-width: 1000px) {
-  .wrapper {
-    padding: 0 50px;
-  }
-}
-@media (max-width: 700px) {
+@media (max-width: 1050px) {
   .wrapper {
     padding: 0 20px;
   }
@@ -106,7 +101,7 @@ html {
 .breadcrumbs {
   display: flex;
   align-items: center;
-  max-width: 1140px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 30px 0;
 }
@@ -362,6 +357,119 @@ html {
   background-size: cover;
 }
 
+.delivery {
+  text-align: left;
+  padding: 0 0 279px 0;
+}
+.delivery__title {
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+.delivery__columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+.delivery__column-title {
+  margin-bottom: 10px;
+}
+.delivery__column-item {
+  list-style: none;
+  position: relative;
+  padding: 0 0 0 10px;
+}
+.delivery__column-item:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+.delivery__column-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: var(--color4);
+  bottom: 7px;
+  left: 0;
+  border-radius: 2px;
+}
+.delivery__text {
+  margin-bottom: 25px;
+}
+.delivery__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+.delivery__content-item {
+  padding-left: 60px;
+}
+.delivery__content-item:nth-of-type(1) {
+  position: relative;
+}
+.delivery__content-item:nth-of-type(1)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../icons/oplata_i_dostavka/1.svg);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  left: 0;
+}
+.delivery__content-item:nth-of-type(2) {
+  position: relative;
+}
+.delivery__content-item:nth-of-type(2)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../icons/oplata_i_dostavka/2.svg);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  left: 0;
+}
+.delivery__content-item:nth-of-type(3) {
+  position: relative;
+}
+.delivery__content-item:nth-of-type(3)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../icons/oplata_i_dostavka/3.svg);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  left: 0;
+}
+
+@media (max-width: 900px) {
+  .delivery {
+    padding-bottom: 100px;
+  }
+  .delivery__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .delivery {
+    padding-bottom: 60px;
+  }
+  .delivery__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .delivery__columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
 .dropdown__lang {
   margin-right: 43px;
   position: relative;
@@ -923,15 +1031,15 @@ html {
 }
 
 .header.open .header__menu-big {
-  transform: translateY(170px);
+  transform: translateY(200px);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   .header {
     padding: 24px 50px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .header {
     padding: 18px 20px;
   }

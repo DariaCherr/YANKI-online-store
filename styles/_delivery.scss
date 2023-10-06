@@ -1,0 +1,114 @@
+.delivery {
+    text-align: left;
+    padding: 0 0 279px 0;
+    &__title {
+        font-weight: 300;
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+    &__columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 20px;
+    }
+    &__column-title {
+        margin-bottom: 10px;
+    }
+    &__column-item {
+        list-style: none;
+        position: relative;
+        padding: 0 0 0 10px;
+        &:not(:last-of-type) {
+            margin-bottom: 5px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 3px;
+            height: 3px;
+            background-color: var(--color4);
+            bottom: 7px;
+            left: 0;
+            border-radius: 2px;
+        }
+    }
+    &__text {
+        margin-bottom: 25px;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+    }
+    &__content-item {
+        padding-left: 60px;
+        &:nth-of-type(1) {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                background-image: url(../icons/oplata_i_dostavka/1.svg);
+                background-repeat: no-repeat;
+                width: 50px;
+                height: 50px;
+                left: 0;
+            }
+        }
+        &:nth-of-type(2) {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                background-image: url(../icons/oplata_i_dostavka/2.svg);
+                background-repeat: no-repeat;
+                width: 50px;
+                height: 50px;
+                left: 0;
+            }
+        }
+        &:nth-of-type(3) {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                background-image: url(../icons/oplata_i_dostavka/3.svg);
+                background-repeat: no-repeat;
+                width: 50px;
+                height: 50px;
+                left: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .delivery {
+        padding-bottom: 100px;
+        &__content {              
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }        
+    }
+}
+
+@media(max-width: 600px) {    
+    .delivery {
+        padding-bottom: 60px; 
+        &__content { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+            align-items: center;          
+        } 
+        &__columns {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }       
+    }
+}
