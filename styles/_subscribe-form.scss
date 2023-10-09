@@ -1,3 +1,9 @@
 .subscribe-form {
     padding: 0 0 100px 0;
 }
+
+@media(max-width: 600px) {
+    .subscribe-form {
+        padding: 0 0 60px 0;
+    }
+}

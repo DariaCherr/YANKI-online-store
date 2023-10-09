@@ -164,7 +164,16 @@
                 background-color: rgb(253, 251, 245);
             }
         }
-
     }
+}
 
+@media(max-width: 600px) {
+    .footer {
+        &__col-heading {
+            font-size: 1.13rem;
+        }
+        &__col-item {
+            font-size: 1.13rem;
+        }
+    }
 }

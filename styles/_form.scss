@@ -25,8 +25,24 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media(max-width: 700px) {
     .form {
         padding: 0 20px;
+    }
+}
+
+@media(max-width: 600px) {
+    .form {
+        &__heading {
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+        }
+        &__text-entry {
+            margin-bottom: 15px;
+            height: 40px;
+        }
+        &__text {
+            font-size: 0.9rem;
+        }
     }
 }

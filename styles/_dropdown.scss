@@ -91,6 +91,9 @@
             margin-top: 6px;
         }
     }
+    &__menu-big-icon {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -107,6 +110,7 @@
         &__currency-btn {
             color: var(--color4);
         }
+        
     }
 }
 
