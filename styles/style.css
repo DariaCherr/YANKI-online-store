@@ -1072,7 +1072,7 @@ html {
   top: -130px;
   padding: 20px 0;
   background-color: transparent;
-  transition: transform 1s;
+  transition: transform 0.5s;
   z-index: 3;
 }
 .header__menu-big-list {
